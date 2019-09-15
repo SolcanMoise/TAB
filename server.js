@@ -1,6 +1,20 @@
 const express = require('express')
+const watch = require('node-watch')
 const app = express()
 const port = 3000
+
+watch('.', { recursive: true }, function(evt, name) {
+
+    if (evt == 'update') {
+        // on create or modify
+        console.log('%s changed.', name);
+      }
+     
+      if (evt == 'remove') {
+        // on delete
+        console.log('%s deleted.', name);
+      }
+});
 
 app.get('/', (req, res) => res.sendFile('index.html', {root: '.'}))
 
