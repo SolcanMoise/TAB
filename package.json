@@ -1,0 +1,22 @@
+{
+  "name": "tab",
+  "description": "",
+  "version": "1.0.0",
+  "author": "Solcan Moise <solcan_moise2014@yahoo.com>",
+  "homepage": "https://github.com/SolcanMoise/TAB#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SolcanMoise/TAB.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SolcanMoise/TAB/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "express": "^4.17.1",
+    "node-watch": "^0.6.3"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
