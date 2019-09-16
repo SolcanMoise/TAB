@@ -11,7 +11,13 @@
   "bugs": {
     "url": "https://github.com/SolcanMoise/TAB/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "angular": "1.7.8",
+    "ui-router": "1.0.0-alpha.3",
+    "bootstrap": "4.3.1",
+    "jquery": "3.4.1",
+    "popper.js": "1.14.7"
+  },
   "devDependencies": {
     "express": "^4.17.1",
     "node-watch": "^0.6.3"
