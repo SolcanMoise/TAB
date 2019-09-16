@@ -1,8 +1,23 @@
-<html>
-    <head>
-    </head>
+<html ng-app="TAB">
 
-    <body>
-        <p>Tab App</p>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="TAB WEB APP">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Solcan Moise">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+
+    <script src="/node_modules/angular/angular.js"></script>
+    <script src="/node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+    <script type="text/javascript" src="/navigation/navigation.js"></script>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <div ng-include="'/navigation/navigation.html'"></div>
+    <!-- Route view -->
+    <div ui-view></div>
+</body>
+
 </html>
