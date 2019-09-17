@@ -10,18 +10,15 @@ app.config(function ($stateProvider, $locationProvider, $urlRouterProvider) {
     $stateProvider
         .state('home', {
             url: '/home',
-            template: "<h1>Home Page</h1>",
-            // controller: "HomeCtrl"
+            templateUrl: "/home/home.html",
         })
         .state('login', {
             url: '/login',
-            template: "<h1>Login Page</h1>",
-            // controller: "LoginCtrl"
+            templateUrl: "/login/login.html",
         })
         .state('signup', {
             url: '/signup',
-            template: "<h1>Signup Page</h1>",
-            // controller: "SignupCtrl"
+            templateUrl: "/signup/signup.html",
         });
 
     // Redirect to home page if url does not  
