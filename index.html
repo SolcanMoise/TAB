@@ -10,11 +10,14 @@
 
     <script src="/node_modules/angular/angular.js"></script>
     <script src="/node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
 
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="/resources/background.css">
     <link rel="stylesheet" href="/login/login.css">
     <link rel="stylesheet" href="/signup/signup.css">
+    <link rel="stylesheet" href="/navigation/navigation.css">
 
     <script type="text/javascript" src="/navigation/navigation.js"></script>
     <script type="text/javascript" src="/home/home.js"></script>
@@ -22,11 +25,11 @@
     <script type="text/javascript" src="/signup/signup.js"></script>
 </head>
 
-<body class="background">
+<body>
+
     <!-- Navigation bar -->
     <div ng-include="'/navigation/navigation.html'"></div>
-    <!-- Route view -->
-    <div ui-view></div>
+
 </body>
 
 </html>

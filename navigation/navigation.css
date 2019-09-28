@@ -1,0 +1,15 @@
+.navigation {
+    background-color: rgba(50, 115, 220, 0.25);
+    position: relative;
+}
+
+._header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 56px;            /* Header height */
+}
+
+._content {
+  padding-top: 56px;    /* header height */
+}

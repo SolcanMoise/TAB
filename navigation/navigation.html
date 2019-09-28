@@ -1,28 +1,39 @@
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #0080FF;">
-    <a class="navbar-brand">
-        <img src="/resources/logo.jpg" width="30" height="30" class="d-inline-block align-top"
-            alt="">
-        TAB
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" ui-sref="home" ui-sref-active="active">Home <span
-                        class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" ui-sref="login" ui-sref-active="active">Login</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" ui-sref="signup" ui-sref-active="active">SignUp</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+<div class="navigation">
+  <div class="_header container">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #0080FF;" id="header">
+          <!-- Brand -->
+          <a class="navbar-brand">
+              <img src="/resources/logo.jpg" width="30" height="30" class="d-inline-block align-top"
+                  alt="Logo"><i>Brand</i>
+          </a>
+
+          <!-- Toggler/collapsibe Button -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="nav navbar-nav mx-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link" ui-sref="home" ui-sref-active="active">Home <span
+                              class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" ui-sref="login" ui-sref-active="active">Login</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" ui-sref="signup" ui-sref-active="active">SignUp</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link disabled" href="#">Disabled</a>
+                  </li>
+              </ul>
+          </div>
+    </nav>
+  </div>
+  <div class="_content container">
+    <!-- Content page - Route view -->
+    <div ui-view></div>
+  </div>
+</div>
