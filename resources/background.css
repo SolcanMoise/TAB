@@ -1,8 +1,0 @@
-.background {
-    width: 100%;
-    height: auto;
-    background: url('background.jpg') repeat-y center;
-    background-position: 50% 50%;
-    background-size: 100% cover!important;
-    overflow: scroll;
-}
