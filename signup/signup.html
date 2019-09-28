@@ -1,0 +1,44 @@
+<div class="_signup container h-100" ng-controller="SignUpController">
+    <div class="row h-100 justify-content-center align-items-center">
+        <div class="col-10 col-md-8 col-lg-6">
+            <!-- Form -->
+            <form class="form-example" action="" method="post">
+                <h1>{{title}}</h1>
+                <p class="description">{{description}}</p>
+                <!-- Input fields -->
+                <div class="form-group">
+                    <label for="full_name">Full Name:</label>
+                    <input type="text" class="form-control full_name" id="full_name" placeholder="Full Name..." name="full_name">
+                </div>
+                <div class="form-group">
+                    <label for="phone_number">Phone Number:</label>
+                    <input type="tel" class="form-control phone_number" id="phone_number" placeholder="Phone Number..." name="phone_number">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control email" id="email" placeholder="Email..." name="email">
+                </div>
+                <div class="form-group">
+                    <label for="user_name">Username:</label>
+                    <input type="text" class="form-control user_name" id="user_name" placeholder="Username..." name="user_name">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control password" id="password" placeholder="Password..." name="password">
+                </div>
+                <div class="form-group">
+                    <label for="repeat_password">Repeat Password:</label>
+                    <input type="password" class="form-control repeat_password" id="repeat_password" placeholder="Repeat Password..." name="repeat_password">
+                </div>
+                <!-- Material unchecked -->
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="terms_and_conditions">
+                    <label class="form-check-label" for="terms_and_conditions">I agree to the <a href="/terms_and_conditions">Terms and Conditions</a></label>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary btn-customized">SignUp</button>
+            </form>
+            <!-- Form end -->
+        </div>
+    </div>
+</div>
